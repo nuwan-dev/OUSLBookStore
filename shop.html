@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="bookshop_style.css">
+    <link rel="stylesheet" href="./Styles/style1.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./Assets/ousl-logo.png" alt="Bookshop Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+    <div class="filters">
+        <label for="genre">Genre:</label>
+        <select id="genre">
+            <option value="all">All</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+        </select>
+
+        <label for="sort">Sort By Price:</label>
+        <select id="sort">
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+    <div id="bookList" class="book-list"></div>
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cartList"></ul>
+        <p id="cartTotal">Total: $0.00</p>
+    </div>
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>
